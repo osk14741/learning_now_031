@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+<head>
+
+</head>
+
+<body>
+    <div>
+        <h1><a href="/">파일 등록 테스트</a></h1>
+    </div>
+    <form method="POST" action="{% url 'file_upload' %}">
+        {% csrf_token %}
+        <input name="test_file" type="file">
+        <button type="submit">등록</button>
+    </form>
+
+
+
+
+</body>
+
+</html>
